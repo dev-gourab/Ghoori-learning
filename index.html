@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghoori Learning</title>
+    <link rel="shortcut icon" href="img/favicon-64-x-64.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <!-- Nav bar -->
+    <div class="navigation-bar bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#"><img src="img/ghoori-learning-logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d_down">
+                            <li class="nav-item px-3 py-4">
+                                <a aria-current="page" href="#">হোম</a>
+                            </li>                           
+                            <li class="nav-item px-3 py-4">
+                                <a href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    কোর্স সমূহ <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="drop_menu m-0 p-3 clearfix" aria-labelledby="navbarDropdown">
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ওয়েব ডিজাইন</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ডিজিটাল মার্কেটিং</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ফটোগ্রাফি</a><li>                          
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">গ্রাফিক্স ডিজাইন</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ভাষা শিক্ষা</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">LELTS</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">English learning</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">একাডেমিক পরীক্ষার প্রস্তুতি</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">প্রফেশনাল ডেভেলপমেন্ট</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ইসলাম শিক্ষা</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">প্রোগ্রামিং</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">উদ্যোক্তা</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">ভিডিও এবং মোশন গ্রাফিক্স</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">প্যাশন লার্নিং</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">সেলফ কেয়ার</a></li>
+                                    <li class="float-start w-50"><a class="d-block my-3 text-black px-2 text-decoration-none" href="#">Game Development</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-3 py-4">
+                                <a href="#">বিবিসি জানালা</a>
+                            </li>
+                            <li class="nav-item px-3 py-4">
+                                <a href="#">মডেল টেষ্ট</a>
+                            </li>
+                        </ul>
+                        <div class="contact mx-4">
+                           <a href="tel: 8801866297475"><i class="fa fa-headphones-alt" aria-hidden="true"></i> ০১৮৬৬২৯৭৪৭৫</a>
+                        </div>
+                        <form class="d-flex">
+                            <input class="form-control search_box" type="search" placeholder="কোর্স সার্চ" aria-label="Search">
+                            <span class="search_icon"><i class="fas fa-search"></i></span>
+                           
+                            <button class="btn btn-outline-danger login_btn px-4 py-2 mx-3" type="submit">লগইন</button>
+                            <button class="btn btn-dark sign_btn" type="submit">সাইন আপ</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+     <!-- Banner area  -->
+    <div class="banner_section">
+        <div class="container">
+           <div class="heading_content">
+                <h1 class="text-white">
+                    বদলে ফেলুন আপনার জীবন                    
+                </h1>
+                <p class="h6 text-white pt-1">দক্ষ করে গড়ে তুলুন নিজেকে ঘুড়ি লার্নিং এ সাশ্রয়ী মূল্যের সব কোর্স এর মাধ্যমে।</p>               
+                <a class="btn bbc_janla text-white d-inline-block py-2 px-4" href="#">বিবিসি জানালার কোর্স</a>
+                <a class="btn udemy_btn d-inline-block bg-white py-2" href="#"> <img src="img/udemy-logo.svg"> <span>Gift Card</span></a>              
+           </div>
+        </div>
+    </div>
+    <section class="service">
+        <div class="container">
+            <div class="row service_content">
+                <div class="col-lg-4 p-4 clearfix">
+                    <div class="service_icon float-start">
+                        <i class="fas fa-video text-center rounded-circle"></i>
+                    </div>
+                    <div class="service_text">
+                        <h6><strong>অসংখ্য অনলাইন কোর্স</strong></h6>
+                        <p>ঘুড়ি লার্নিং থেকে বেছে নিন আপনার প্রয়োজনীয় কোর্সটি​</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-4 clearfix">
+                    <div class="service_icon float-start">
+                        <i class="fas fa-award text-center rounded-circle"></i>
+                    </div>
+                    <div class="service_text">
+                        <h6><strong>এক্সপার্টদের তৈরীকৃত</strong></h6>
+                        <p>প্রতিটি বিষয়ের কোর্স ম্যটেরিয়াল​ বিশেষজ্ঞ দ্বারা ডিজাইন করা হয়েছে​</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-4 clearfix">
+                    <div class="service_icon float-start">
+                        <i class="fas fa-infinity text-center rounded-circle"></i>
+                    </div>
+                    <div class="service_text">
+                        <h6><strong>এক্সক্লুসিভ কোর্স</strong></h6>
+                        <p>এই কোর্সগুলো শুধুমাত্র ঘুড়ি লার্নিং এর ইউজারদের জন্য তৈরিকৃত​</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- gift card -->
+    <section class="gift">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-lg-4">
+                    <div class="gift_card">
+                        <img src="img/udemy-banner.png">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="gift_content">
+                        <h3>গিফট কার্ড কিনুন</h3>
+                        <p>ঘুড়ি লার্নিং থেকে গিফট কার্ড কিনে আপনিও Udemy এর কোর্সে ছাড় পাবেন। তাই এখনই কিনুন।</p>
+                        <a class="btn btn_udemy" href="#"><img src="img/udemy-white-logo.svg"> কোর্সের গিফট কার্ড কিনুন</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider_bundle">
+        <div class="container">
+            <div class="slider_title mb-3">বান্ডেল অফার</div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/ae04349487d1b52eb2156370915526ce-medium.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                        <li>Advance English Speaking Course</li>
+                                        <li>Corporate English</li>
+                                        <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                        <li>Professinal CV Writing</li>
+                                        <li>টাইম মেনেজমেন্ট</li>
+                                        <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                        <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4f65462da643694a168a0f56488a689c-medium.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4f65462da643694a168a0f56488a689c-medium.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul> 
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/09f99b43ff501fd4e35a0fb31b3cd795-medium.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/d3a73986cdbefceeae9506307bb868fd-medium.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card shadow_card">
+                                    <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body slider_content">
+                                        <h4 class="card-title"><a class="btn p-0" href="#">Carrear Starter Pack</a></h4>
+                                        <ul>
+                                            <li>Advance English Speaking Course</li>
+                                            <li>Corporate English</li>
+                                            <li>প্রফেশনাল এক্সেল মাস্টার ক্লাস</li>
+                                            <li>Professinal CV Writing</li>
+                                            <li>টাইম মেনেজমেন্ট</li>
+                                            <li>ইন্টারভিউ এর প্রস্তুতি</li>
+                                            <li>লিডারশিপ স্কিল</li>
+                                        </ul>
+                                        <h2 class="price_box">২৪৫৯ টাকা</h2>
+                                        <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                        <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev sl_btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next sl_btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Course  -->
+    <div class="course_category">
+        <section class="our_course">
+            <div class="container">
+                <div class="slider_title mb-3">জনপ্রিয় কোর্সসমূহ</div>
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/9e75f82df0e0ed8d4124c6b946283b68.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">Python Basic</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/bbccc6a2a96839f1eaf1c95792d6c16f.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">LELTS</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"> </i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/b251b00370917bb9763c2d74ad79d713.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">Spoken English</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/469ec43d8210c82f8205b65f4708e6b8-medium.jpeg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">HSC Module 7</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/11d50c0c107f7614076ea39b7abeedd3-medium.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">SEO Basic</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/59af7b6c88a0a246254b1919e2dbfcda.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">Video Editing</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/9bb179a38267329112124ab9f602023e-medium.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">3D Annimation Basic</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/8c1b627cd9f41f1de56c1ddd500c992f.jpeg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">Excel Master Class</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/17eceb689d087e3ea67de19cc2d22b12.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">Professional Photography</a></h4>
+                                            <h2 class="price_box"> ২৪৮ টাকা <sub class="sub_letter"><del>৪৯৯ টাকা</del> ৫০% ছাড়</sub></h2>
+                                            <h6 class="limit"><i class="fas fa-stopwatch"></i> আর মাত্র ৫ দিন বাকি আছে</h6>
+                                            <span class="view"><i class="far fa-eye"></i> 110719 Views</span>
+                                            <span class="view"><i class="far fa-clock"></i> 4 hr 7 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev sl_btn" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next sl_btn" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+            <!-- category -->
+        <section class="our_category">
+            <div class="container">
+                <div class="slider_title mb-3">জনপ্রিয় ক্যাটাগরী</div>
+                <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/95881ba97f94202f0db788d94302c84a.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">ফটোগ্রাফি</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/752f3951f86d2ce125c3f96c49612c85.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">গ্রাফিক্স ডিজাইন</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/2353dfc5c2d36322fb5b32ac7adbae59.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">ভাষা শিক্ষা</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">একাডেমিক পরীক্ষার প্রস্তুতি</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/4f65462da643694a168a0f56488a689c-medium.jpeg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">প্রোফেশনাল ডেভেলপমেন্ট</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">LELTS</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/09f99b43ff501fd4e35a0fb31b3cd795-medium.jpeg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">English Learning</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/d3a73986cdbefceeae9506307bb868fd-medium.jpeg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">প্যাশন লার্নিং</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow_card">
+                                        <img src="img/4dae7257870126b0cf69fa27d831fa89-medium.jpg" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body slider_content">
+                                            <h4 class="card-title"><a class="btn p-0" href="#">সেলফ কেয়ার</a></h4>
+                                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev sl_btn" type="button" data-bs-target="#carouselExampleControls3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next sl_btn" type="button" data-bs-target="#carouselExampleControls3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <div class="slider_title mb-3">সাম্প্রতিক ব্লগ সমূহ</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card shadow_card">
+                        <img src="img/95881ba97f94202f0db788d94302c84a.jpg" class="card-img-top" alt="...">
+                        <div class="card-body slider_content blog_content">
+                            <h4 class="card-title"><a class="btn p-0" href="#">ইউটিউব মার্কেটিং কি? কিভাবে করবেন ইউটিউব মার্কেটিং?</a></h4>
+                            <p>
+                                ইউটিউব মার্কেটিং হল বর্তমান বিশ্বে মার্কেটিং এর দুনিয়ায় অনেক গুরুত্বপু...
+                                <a href="https://ghoorilearning.com/posts/%E0%A6%87%E0%A6%89%E0%A6%9F%E0%A6%BF%E0%A6%89%E0%A6%AC-%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%82-%E0%A6%95%E0%A6%BF"
+                                    class="link alert-link">Read More</a>
+                            </p>
+                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow_card">
+                        <img src="img/752f3951f86d2ce125c3f96c49612c85.jpg" class="card-img-top" alt="...">
+                        <div class="card-body slider_content blog_content">
+                            <h4 class="card-title"><a class="btn p-0" href="#">পাইথন প্রোগ্রামিং কি? কেন শিখবেন পাইথন প্রোগ্রামিং শিখবেন?</a></h4>
+                            <p>
+                                পাইথন প্রোগ্রামিং হল একটি object oriented প্রোগ্রামিং ল্যাংগুয়েজ। পাইথ...
+                                <a href="https://ghoorilearning.com/posts/%E0%A6%AA%E0%A6%BE%E0%A6%87%E0%A6%A5%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%95%E0%A6%BF"
+                                    class="link alert-link">Read More</a>
+                            </p>
+                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow_card">
+                        <img src="img/2353dfc5c2d36322fb5b32ac7adbae59.jpg" class="card-img-top" alt="...">
+                        <div class="card-body slider_content blog_content">
+                            <h4 class="card-title"><a class="btn p-0" href="#">ফেসবুক মার্কেটিং কি? কিভাবে করবেন ফেসবুক মার্কেটিং?</a></h4>
+                            <p>
+                                ফেসবুক মার্কেটিং কি? কিভাবে করবেন? কেন করবেন? এবং ফেসবুক মার্কেটিং এর...
+                                <a href="https://ghoorilearning.com/posts/%E0%A6%AB%E0%A7%87%E0%A6%B8%E0%A6%AC%E0%A7%81%E0%A6%95-%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%82-%E0%A6%95%E0%A6%BF"
+                                    class="link alert-link">Read More</a>
+                            </p>
+                            <span class="view"><i class="fas fa-book-open"></i> &nbsp 7 courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Newsletter -->
+    <div class="newsletter">
+        <div class="container text-center">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-7">
+                    <div class="news_content">
+                        <h2>নিজেকে আপডেটেড রাখতে কানেক্টেড থাকুন ঘুড়ি লার্নিং এর সাথে</h2>
+                        <h5>দারুণসব অফার আর আপডেট পেতে আমাদের নিউজলেটার সাবস্ক্রাইব করুন!</h5>
+                        <form>
+                        <div class="mb-3">                            
+                            <input type="email" class="form-control f_email" placeholder="Your Email Address" aria-describedby="emailHelp">                   
+                        </div>                 
+                        <button type="submit" class="btn e_submit">শুরু করুন</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+    <footer class="author mt-4 mb-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2">
+                    <div class="copy">
+                        <p>কপিরাইট © ২০২১, গৌরব দাস</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about">
+                        <ul class="m-0 p-0">
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">সাহায্য ও তথ্য</a></li>
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">শর্তাবলী</a></li>
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">প্রাইভেসি নীতিমালা</a></li>
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">ঘুড়ি লার্নিং সম্পর্কে জানুন</a></li>
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">যোগাযোগ করুন</a></li>
+                            <li class="d-inline-block"><a class="d-inline-block px-2" href="#">ব্লগ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="social text-end">
+                        <ul class="m-0 p-0">
+                            <li class="list-style-none d-inline-block bor_right"><a href="#" class="px-3"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-style-none d-inline-block"><a href="#" class="px-3"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // alert("This page contain some cookies.")
+    </script>
+    
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
